@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Prediction Result</h1>
+
+        <div class="result-box">
+            <h2 class="{{ prediction|lower }}">{{ prediction }}</h2>
+            <p>Confidence: {{ confidence }}%</p>
+        </div>
+
+        <h3>Input News</h3>
+        <p>{{ news_text }}</p>
+
+        <a href="/">Check Another News</a>
+        <a href="/dashboard">Dashboard</a>
+    </main>
+</body>
+</html>
